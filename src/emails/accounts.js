@@ -19,9 +19,7 @@ const sendWelcomeMessage = (email, name) => {
     },
     (err, info) => {
       if (err) {
-        console.log(err);
-      } else {
-        console.log(info);
+        return err;
       }
     }
   );
